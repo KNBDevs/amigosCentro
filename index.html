@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Amigos Málaga – Restaurante Indio y Mexicano</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind config extendido -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cta: '#F4A300',
+                        ctaHover: '#e69200',
+                        dark: '#1C1C1C',
+                        accent: '#6D9A2B',
+                        brown: '#A47C6B',
+                        rose: '#EABFB9',
+                    },
+                    fontFamily: {
+                        title: ['"Playfair Display"', 'serif'],
+                        body: ['"Quicksand"', 'sans-serif'],
+                        script: ['"Dancing Script"', 'cursive'],
+                    },
+                }
+            }
+        };
+    </script>
+
+    <link rel="stylesheet" href="/styles/tailwind.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand:wght@400;600&family=Dancing+Script&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-white text-dark font-body">
+
+    <!-- Contenedor donde se inyectan los componentes -->
+    <div id="app"></div>
+
+    <!-- Script principal que carga las secciones -->
+    <script src="js/lang.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!-- Navbar AMIGOS -->
+<nav class="w-full bg-black text-white font-body shadow-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-end px-6 md:px-12 py-6 md:py-7">
+
+        <!-- Menú navegación desktop alineado a la derecha -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+            <a href="#ubicacion" data-i18n="navbar.ubicacion" class="transition hover:text-[#947e17]">Ubicación</a>
+            <a href="#carta" data-i18n="navbar.carta" class="transition hover:text-[#947e17]">Carta</a>
+            <a href="#reservas" data-i18n="navbar.reservas" class="transition hover:text-[#947e17]">Reservas</a>
+            <a href="#deliveries" data-i18n="navbar.deliveries" class="transition hover:text-[#947e17]">Deliveries</a>
+            <span class="border-l border-white pl-4 ml-2 space-x-1">
+                <button class="lang-btn hover:underline" data-lang="es">ES</button> |
+                <button class="lang-btn hover:underline" data-lang="en">EN</button>
+            </span>
+
+        </div>
+
+        <!-- Botón hamburguesa (que cambia a X dinámicamente) -->
+        <button id="burger-button" class="md:hidden text-white focus:outline-none ml-auto z-50 relative">
+            <svg id="burger-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor"
+                stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <!-- Menú móvil deslizante desde la derecha -->
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-64 bg-black text-white transform translate-x-full transition-transform duration-300 flex flex-col items-start px-6 pt-20 space-y-6 text-sm font-semibold tracking-wide z-40">
+
+            <a href="#ubicacion" data-i18n="navbar.ubicacion" class="hover:text-cta">Ubicación</a>
+            <a href="#carta" data-i18n="navbar.carta" class="hover:text-cta">Carta</a>
+            <a href="#reservas" data-i18n="navbar.reservas" class="hover:text-cta">Reservas</a>
+            <a href="#deliveries" data-i18n="navbar.deliveries" class="hover:text-cta">Deliveries</a>
+            <span class="flex space-x-2">
+                <button class="lang-btn hover:underline" data-lang="es">ES</button>
+                <span>|</span>
+                <button class="lang-btn hover:underline" data-lang="en">EN</button>
+            </span>
+        </div>
+
+    </div>
+</nav>

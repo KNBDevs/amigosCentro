@@ -1,0 +1,35 @@
+/amigos-restaurant
+│
+├── index.html                  ← HTML principal (estructura simple, modular)
+│
+├── /assets                     ← Archivos estáticos
+│   ├── /img                    ← Imágenes (platos, fondo, logo, etc.)
+│   ├── /fonts                  ← Fuentes personalizadas si las hubiera
+│   ├── /lang
+│   │    └── es.json              ← Fuentes personalizadas si las hubiera
+│   │    └── en.json              ← Fuentes personalizadas si las hubiera
+│   └── /icons                  ← Íconos SVG o PNG
+│
+├── /styles
+│   └── tailwind.css            ← Archivo base con directivas Tailwind
+│
+├── /js
+│   ├── main.js                 ← Script principal: inicia módulos, scroll, nav...
+│   ├── navbar.js               ← Componente navegación superior
+│   ├── hero.js                 ← Sección hero (imagen fondo + nombre restaurante)
+│   ├── cocina.js               ← Sección “Cocina” (foto + texto decorativo)
+│   ├── historia.js             ← Sección “Nuestra historia”
+│   ├── restaurante.js          ← Sección “Nuestro restaurante” (info + horario)
+│   ├── footer.js               ← Pie de página
+│   └── lang.js                 ← Opcional: traducción futura
+│
+├── /components                 ← Fragmentos HTML reutilizables (si usas includes o JS templates)
+│   ├── navbar.html
+│   ├── hero.html
+│   ├── cocina.html
+│   ├── historia.html
+│   ├── restaurante.html
+│   └── footer.html
+│
+├── tailwind.config.js         ← Configuración personalizada Tailwind
+└── README.md                  ← Opcional: notas del proyecto
