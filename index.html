@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="meta.title">Amigos Málaga – Restaurante Indio y Mexicano</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/amigos_favicon.png" />
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -23,9 +26,10 @@
                         rose: '#EABFB9',
                     },
                     fontFamily: {
-                        title: ['"Playfair Display"', 'serif'],
-                        body: ['"Quicksand"', 'sans-serif'],
-                        script: ['"Dancing Script"', 'cursive'],
+                        title: ['"Playfair Display"', 'serif'],     // Títulos si quieres mantenerlo
+                        body: ['"Abel"', 'sans-serif'],             // ← Abel como base
+                        script: ['"Allison"', 'cursive'],           // Decorativo
+                        montserrat: ['"Montserrat"', 'sans-serif'], // UI, botones, etc.
                     },
                 }
             }
@@ -34,11 +38,12 @@
 
     <link rel="stylesheet" href="styles/tailwind.css">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts nuevas -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand:wght@400;600&family=Dancing+Script&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Allison&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 
 <body class="bg-white text-dark font-body">
 

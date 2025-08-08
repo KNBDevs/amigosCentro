@@ -1,36 +1,42 @@
-<!-- Navbar AMIGOS -->
 <nav class="w-full bg-black text-white font-body shadow-md">
-    <div class="max-w-7xl mx-auto flex items-center justify-end px-6 md:px-12 py-6 md:py-7">
 
-        <!-- Menú navegación desktop alineado a la derecha -->
-        <div class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
-            <a href="#ubicacion" data-i18n="navbar.ubicacion" class="transition hover:text-[#947e17]">Ubicación</a>
+    <div class="relative w-full h-[88px] flex items-center justify-end px-3 md:px-6 lg:px-8">
+
+        <!-- Menú desktop -->
+        <div class="hidden md:flex items-center space-x-8 text-2xl font-semibold tracking-wide">
+            <a href="https://www.google.com/maps?q=36.721302,-4.421660" target="_blank" data-i18n="navbar.ubicacion"
+                class="transition hover:text-[#947e17]">Ubicación</a>
             <a href="#carta" data-i18n="navbar.carta" class="transition hover:text-[#947e17]">Carta</a>
-            <a href="#reservas" data-i18n="navbar.reservas" class="transition hover:text-[#947e17]">Reservas</a>
+            <a href="https://www.google.com/maps/reserve/v/dine/c/2Fa6BGusXGc?source=pa&opi=89978449&hl=es-ES&gei=dKOVaJbdHKWnkdUP47SY0Ag&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fgs_ssp%3DeJzj4tVP1zc0TKowyjE3MzY1YLRSMahIMTdKM7c0TUw0MjM3NE2xMqgwTjRLTDQ2TjEyME4xMU4y8xJJzM1Mzy9WyE3MSUxPVEhOzSspygcAAeEWAg%26q%3Damigos%2Bmalaga%2Bcentro%26rlz%3D1C1GCEA_enES1048ES1048%26oq%3DAMIGOS%2BMALAGA%2BCENTRO%26gs_lcrp%3DEgZjaHJvbWUqDQgAEC4YrwEYxwEYgAQyDQgAEC4YrwEYxwEYgAQyDAgBEEUYORjjAhiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDQ0NDRqMGo0qAIAsAIB%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=9"
+                target="_blank" data-i18n="navbar.reservas" class="transition hover:text-[#947e17]">Reservas</a>
             <a href="#deliveries" data-i18n="navbar.deliveries" class="transition hover:text-[#947e17]">Deliveries</a>
             <span class="border-l border-white pl-4 ml-2 space-x-1">
                 <button class="lang-btn hover:underline" data-lang="es">ES</button> |
                 <button class="lang-btn hover:underline" data-lang="en">EN</button>
             </span>
-
         </div>
 
-        <!-- Botón hamburguesa (que cambia a X dinámicamente) -->
-        <button id="burger-button" class="md:hidden text-white focus:outline-none ml-auto z-50 relative">
-            <svg id="burger-icon" class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor"
+        <!-- Burger button -->
+        <button id="burger-button"
+            class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 text-white focus:outline-none z-[11000]">
+            <svg id="burger-icon" class="w-7 h-7 transition-transform duration-300" fill="none" stroke="currentColor"
                 stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
 
-        <!-- Menú móvil deslizante desde la derecha -->
-        <div id="mobile-menu"
-            class="fixed top-0 right-0 h-full w-64 bg-black text-white transform translate-x-full transition-transform duration-300 flex flex-col items-start px-6 pt-20 space-y-6 text-sm font-semibold tracking-wide z-40">
 
-            <a href="#ubicacion" data-i18n="navbar.ubicacion" class="hover:text-cta">Ubicación</a>
-            <a href="#carta" data-i18n="navbar.carta" class="hover:text-cta">Carta</a>
-            <a href="#reservas" data-i18n="navbar.reservas" class="hover:text-cta">Reservas</a>
-            <a href="#deliveries" data-i18n="navbar.deliveries" class="hover:text-cta">Deliveries</a>
+        <!-- Menú móvil -->
+        <div id="mobile-menu"
+            class="fixed top-0 right-0 h-full w-64 bg-black text-white transform translate-x-full transition-transform duration-300 flex flex-col items-start px-6 pt-[96px] space-y-6 text-xl font-semibold tracking-wide z-[9999]">
+            
+            <a href="https://www.google.com/maps?q=36.721302,-4.421660" target="_blank" data-i18n="navbar.ubicacion"
+                class="transition hover:text-[#947e17]">Ubicación</a>
+            <a href="#carta" target="_blank" data-i18n="navbar.carta" class="transition hover:text-[#947e17]">Carta</a>
+            <a href="https://www.google.com/maps/reserve/v/dine/c/2Fa6BGusXGc?source=pa&opi=89978449&hl=es-ES&gei=dKOVaJbdHKWnkdUP47SY0Ag&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fgs_ssp%3DeJzj4tVP1zc0TKowyjE3MzY1YLRSMahIMTdKM7c0TUw0MjM3NE2xMqgwTjRLTDQ2TjEyME4xMU4y8xJJzM1Mzy9WyE3MSUxPVEhOzSspygcAAeEWAg%26q%3Damigos%2Bmalaga%2Bcentro%26rlz%3D1C1GCEA_enES1048ES1048%26oq%3DAMIGOS%2BMALAGA%2BCENTRO%26gs_lcrp%3DEgZjaHJvbWUqDQgAEC4YrwEYxwEYgAQyDQgAEC4YrwEYxwEYgAQyDAgBEEUYORjjAhiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDQ0NDRqMGo0qAIAsAIB%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=9"
+                target="_blank" data-i18n="navbar.reservas" class="transition hover:text-[#947e17]">Reservas</a>
+            <a href="https://www.google.com/maps/reserve/v/dine/c/2Fa6BGusXGc?source=pa&opi=89978449&hl=es-ES&gei=dKOVaJbdHKWnkdUP47SY0Ag&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fgs_ssp%3DeJzj4tVP1zc0TKowyjE3MzY1YLRSMahIMTdKM7c0TUw0MjM3NE2xMqgwTjRLTDQ2TjEyME4xMU4y8xJJzM1Mzy9WyE3MSUxPVEhOzSspygcAAeEWAg%26q%3Damigos%2Bmalaga%2Bcentro%26rlz%3D1C1GCEA_enES1048ES1048%26oq%3DAMIGOS%2BMALAGA%2BCENTRO%26gs_lcrp%3DEgZjaHJvbWUqDQgAEC4YrwEYxwEYgAQyDQgAEC4YrwEYxwEYgAQyDAgBEEUYORjjAhiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDQ0NDRqMGo0qAIAsAIB%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=9"
+                target="_blank" data-i18n="navbar.reservas" class="transition hover:text-[#947e17]">Reservas</a>
             <span class="flex space-x-2">
                 <button class="lang-btn hover:underline" data-lang="es">ES</button>
                 <span>|</span>

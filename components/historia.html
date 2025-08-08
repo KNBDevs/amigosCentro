@@ -1,23 +1,40 @@
-<section id="historia" class="bg-black text-white py-20 px-8 md:px-20">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<section id="historia" 
+    class="relative bg-black text-white py-28 pl-1 pr-1 md:pl-3 md:pr-3 lg:pl-4 lg:pr-4 
+           bg-[url('assets/img/background_section.jpg')] bg-cover bg-center bg-no-repeat">
+  
+  <!-- Capa oscura para contraste -->
+  <div class="absolute inset-0 bg-black/40"></div>
 
+  <!-- Contenido -->
+  <div class="relative max-w-[1800px] mx-auto px-2 md:px-3 lg:px-4 grid md:grid-cols-2 gap-[7rem] items-center">
+    
     <!-- Imagen ajustada -->
     <div class="flex justify-center">
-      <img src="assets/img/historia.jpg" alt="Historia culinaria"
-        class="object-cover rounded-lg shadow-lg w-full h-auto max-h-[460px] aspect-video" />
+      <img src="assets/img/historia.jpg" 
+           alt="Historia culinaria" 
+           class="object-cover object-[50%_45%] shadow-lg w-full h-auto
+                  max-h-[640px] md:max-h-[700px] lg:max-h-[435px]" />
     </div>
 
-    <!-- Texto alineado a la derecha -->
-    <div class="max-w-xl text-gray-200 text-right items-end flex flex-col">
-      <h2 data-i18n="historia.sobre" class="text-3xl md:text-4xl font-script text-[#947e17] mb-2">Sobre nosotros</h2>
-      <h3 data-i18n="historia.titulo" class="text-2xl md:text-3xl font-semibold uppercase tracking-wide mb-6">Nuestra historia</h3>
+    <!-- Texto con ancho más amplio -->
+    <div class="text-gray-200 text-right items-end flex flex-col w-full">
+      <h2 data-i18n="historia.sobre" 
+          class="text-4xl md:text-8xl font-script leading-tight text-[#947e17] mb-2">
+        Sobre nosotros
+      </h2>
+      <h3 data-i18n="historia.titulo"
+          class="text-3xl md:text-4xl font-montserrat font-bold uppercase tracking-wide mb-6">
+        Nuestra historia
+      </h3>
 
-      <p data-i18n="historia.parrafo1" class="text-base md:text-[17px] leading-relaxed tracking-wide">
+      <p data-i18n="historia.parrafo1" 
+         class="text-base md:text-[25px] leading-relaxed tracking-wide">
         Ubicado en una bocacalle de la Calle Larios, en pleno centro histórico de Málaga,
         nuestro restaurante ofrece una combinación original de cocina india y mexicana.
       </p>
 
-      <p data-i18n="historia.parrafo2" class="mt-6 text-base md:text-[17px] leading-relaxed tracking-wide">
+      <p data-i18n="historia.parrafo2" 
+         class="mt-6 text-base md:text-[25px] leading-relaxed tracking-wide">
         Una propuesta gastronómica que une especias, sabores intensos y platos representativos
         de la cultura india y mexicana. Gracias a nuestra localización céntrica y con una terraza,
         somos una opción ideal para quienes buscan comer bien en el centro de la ciudad, con

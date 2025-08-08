@@ -13,8 +13,9 @@ module.exports = {
       },
       fontFamily: {
         title: ['"Playfair Display"', 'serif'],
-        body: ['"Quicksand"', 'sans-serif'],
-        script: ['"Dancing Script"', 'cursive'],
+        body: ['"Abel"', 'sans-serif'],
+        script: ['"Allison"', 'cursive'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
       },
     },
   },

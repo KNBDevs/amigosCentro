@@ -1,19 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Quicksand:wght@400;600&display=swap');
-
-
 @keyframes marquee {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0%);
   }
 
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+/* ✅ Pausar al pasar el ratón o usar teclado */
+#aliados-marquee:hover,
+#aliados-marquee:focus-within {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
   .animate-marquee {
-    animation: marquee 30s linear infinite;
+    animation: none;
+    transform: none;
   }
+}
 
-  #aliados-marquee:hover {
-    animation-play-state: paused;
-  }
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#app {
+  scroll-behavior: smooth;
+}

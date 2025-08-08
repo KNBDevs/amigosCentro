@@ -1,99 +1,181 @@
-<section class="relative bg-black text-white py-20 px-6 font-body overflow-hidden">
-
+<section id="deliveries" class="relative bg-black text-white py-20 px-6 font-body overflow-hidden">
   <!-- 🎥 Video de fondo -->
   <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
     <source src="assets/img/nuestro_restaurante.mp4" type="video/mp4" />
     Tu navegador no soporta video HTML5.
   </video>
 
+  <!-- Texto fantasma -->
+  <div class="absolute inset-x-0 top-8 text-center pointer-events-none select-none z-[5]">
+    <span aria-hidden="true" class="font-montserrat font-extrabold uppercase tracking-wide leading-none text-white/16"
+      style="font-weight: 900; font-size: 120px;">
+      NUESTRO RESTAURANTE
+    </span>
+  </div>
+
   <!-- Capa oscura para contraste -->
   <div class="absolute inset-0 bg-black/80 z-10"></div>
 
   <!-- Contenido de la sección -->
   <div class="relative z-20">
-    <h2 data-i18n="restaurante.titulo" class="text-3xl md:text-4xl font-bold text-center mb-16">NUESTRO RESTAURANTE</h2>
+    <h2 data-i18n="restaurante.titulo" class="text-3xl md:text-6xl font-montserrat font-bold text-center mb-16">
+      NUESTRO RESTAURANTE
+    </h2>
 
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+    <div class="max-w-[1800px] mx-auto px-2 md:px-3 lg:px-4 grid md:grid-cols-2 gap-[7rem]">
       <!-- Izquierda -->
       <div>
-        <h3 data-i18n="restaurante.reserva.titulo" class="text-[#947e17] text-lg font-semibold mb-4">HAZ TU RESERVA</h3>
-        <p data-i18n="restaurante.reserva.texto1" class="mb-4 text-sm md:text-base">
+        <h3 data-i18n="restaurante.reserva.titulo" class="text-[#947e17] text-xl md:text-2xl font-semibold mb-4">HAZ TU
+          RESERVA</h3>
+        <p data-i18n="restaurante.reserva.texto1" class="mb-4 text-lg md:text-[25px] leading-relaxed tracking-wide">
           Para ofrecerle la mejor experiencia, adaptamos nuestros espacios según sus necesidades...
         </p>
-        <p data-i18n="restaurante.reserva.texto2" class="mb-6 text-sm md:text-base">
+        <p data-i18n="restaurante.reserva.texto2" class="mb-6 text-lg md:text-[25px] leading-relaxed tracking-wide">
           Le invitamos a contactarnos para personalizar su reserva con antelación.
         </p>
-        <p class="mb-1"><strong>Tel: 951 13 79 90</strong></p>
-        <p class="mb-6"><strong>Email: hola@amigoscentromalaga.com</strong></p>
-        <a href="#reserva" data-i18n="restaurante.reserva.boton" class="inline-block bg-[#947e17] text-black font-semibold px-6 py-2 rounded-full shadow hover:bg-[#7c6b13] transition">
+        <p class="mb-1 text-lg md:text-[25px]"><strong>Tel: 951 13 79 90</strong></p>
+        <p class="mb-6 text-lg md:text-[25px]"><strong>Email: hola@amigoscentromalaga.com</strong></p>
+        <a href="https://www.google.com/maps/reserve/v/dine/c/2Fa6BGusXGc?source=pa&opi=89978449&hl=es-ES&gei=dKOVaJbdHKWnkdUP47SY0Ag&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fgs_ssp%3DeJzj4tVP1zc0TKowyjE3MzY1YLRSMahIMTdKM7c0TUw0MjM3NE2xMqgwTjRLTDQ2TjEyME4xMU4y8xJJzM1Mzy9WyE3MSUxPVEhOzSspygcAAeEWAg%26q%3Damigos%2Bmalaga%2Bcentro%26rlz%3D1C1GCEA_enES1048ES1048%26oq%3DAMIGOS%2BMALAGA%2BCENTRO%26gs_lcrp%3DEgZjaHJvbWUqDQgAEC4YrwEYxwEYgAQyDQgAEC4YrwEYxwEYgAQyDAgBEEUYORjjAhiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDQ0NDRqMGo0qAIAsAIB%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=9"
+          data-i18n="restaurante.reserva.boton"
+          class="inline-block bg-[#947e17] text-white font-semibold px-12 py-6 text-2xl rounded-full shadow hover:bg-[#7c6b13] transition mt-8">
           Reservas
         </a>
+
       </div>
 
       <!-- Derecha -->
       <div class="flex flex-col items-end text-right">
-        <h3 data-i18n="restaurante.horario.titulo" class="text-[#947e17] text-lg font-semibold mb-4">HORARIO</h3>
-        <p data-i18n="restaurante.horario.valor" class="mb-6">LUNES A DOMINGO<br>12:00 - 23:45 H.</p>
+        <h3 data-i18n="restaurante.horario.titulo" class="text-[#947e17] text-xl md:text-2xl font-semibold mb-4">HORARIO
+        </h3>
+        <p data-i18n="restaurante.horario.valor" class="mb-6 text-lg md:text-[25px] leading-relaxed tracking-wide">
+          <span class="block">LUNES A DOMINGO</span>
+          <span class="block">12:00 - 23:45 H.</span>
+        </p>
 
-        <h3 data-i18n="restaurante.direccion.titulo" class="text-[#947e17] text-lg font-semibold mb-4">DIRECCIÓN</h3>
-        <p data-i18n="restaurante.direccion.valor" class="mb-6">C. Bolsa 6, Distrito Centro,<br>29015 Málaga</p>
+        <h3 data-i18n="restaurante.direccion.titulo" class="text-[#947e17] text-xl md:text-2xl font-semibold mb-4">
+          DIRECCIÓN
+        </h3>
 
-        <h3 data-i18n="restaurante.delivery.titulo" class="text-[#947e17] text-lg font-semibold mb-4">DELIVERY</h3>
-        <div class="flex space-x-4 items-center justify-end">
-          <img src="assets/icons/delivery/uber.png" class="h-6 w-auto" />
-          <img src="assets/icons/delivery/glovo.png" class="h-8 w-auto" />
-          <img src="assets/icons/delivery/justEat.png" class="h-10 w-auto" />
+        <p data-i18n="restaurante.direccion.valor" class="mb-6 text-lg md:text-[25px] leading-relaxed tracking-wide">
+          <span class="block">C. Bolsa 6, Distrito Centro</span>
+          <span class="block">29015 Málaga</span>
+        </p>
+
+        <h3 data-i18n="restaurante.delivery.titulo" class="text-[#947e17] text-xl md:text-2xl font-semibold mb-4">
+          DELIVERY</h3>
+        <div class="flex space-x-4 items-center justify-end h-9">
+          <a href="https://www.ubereats.com/es/store/amigos-grill-malaga-centro/Mb-nzxJOVcG-xvwiHvV4Zg?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMlAuJUMyJUJBJTIwUmVkaW5nJTJDJTIwMjAlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjJDaElKNDNmTUV1ajNjZzBSUHhRb3NoYkhvUm8lMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIyZ29vZ2xlX3BsYWNlcyUyMiUyQyUyMmxhdGl0dWRlJTIyJTNBMzYuNzIwNzQyOSUyQyUyMmxvbmdpdHVkZSUyMiUzQS00LjQwODU3NzYlN0Q%3D&ps=1"
+            target="_blank">
+            <img src="assets/icons/delivery/uber_eats.png" class="h-4 w-auto" />
+          </a>
+          <a href="https://glovoapp.com/es/es/malaga/amigos-centro-malaga/" target="_blank">
+            <img src="assets/icons/delivery/glovo.png" class="h-6 w-auto" />
+          </a>
+          <a href="https://www.just-eat.es/restaurants-amigos-grill-malaga-centro-malaga/menu" target="_blank">
+            <img src="assets/icons/delivery/just_eat.png" class="h-6 w-auto" />
+          </a>
         </div>
       </div>
     </div>
 
     <!-- Separador -->
-    <div class="border-t-4 border-[#947e17] my-12 max-w-6xl mx-auto"></div>
+    <div class="border-t-4 border-[#947e17] mt-28 mb-16 max-w-[1800px] mx-auto px-2 md:px-3 lg:px-4"></div>
 
     <!-- Carrusel -->
     <div class="overflow-hidden py-6">
       <div id="aliados-marquee" class="whitespace-nowrap flex animate-marquee gap-10">
-        <img src="assets/icons/amici_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/elarbol_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/amigos_white_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/saloniki_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/jimmys_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/amici_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/elarbol_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/amigos_white_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/saloniki_logo.png" class="h-14 object-contain inline-block" />
-        <img src="assets/icons/jimmys_logo.png" class="h-14 object-contain inline-block" />
-      </div>
-    </div>
+        <a href="https://www.facebook.com/p/Granier-Caf%C3%A9-Pan-Carihuela-Torremolinos-61573970776807/" target="_blank" rel="noopener noreferrer"
+          aria-label="Granier Carihuela" class="flex-none">
+          <img src="assets/icons/carrusel/granierCarihuela_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/the-chiringuito" target="_blank" rel="noopener noreferrer"
+          aria-label="The Chiringuito" class="flex-none">
+          <img src="assets/icons/carrusel/theChiringuito_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/el-arbol" target="_blank" rel="noopener noreferrer" aria-label="El Árbol"
+          class="flex-none">
+          <img src="assets/icons/carrusel/elArbol_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/sabor" target="_blank" rel="noopener noreferrer" aria-label="Sabor"
+          class="flex-none">
+          <img src="assets/icons/carrusel/sabor_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/amigos" target="_blank" rel="noopener noreferrer" aria-label="Amigos"
+          class="flex-none">
+          <img src="assets/icons/carrusel/amigos_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/portobello" target="_blank" rel="noopener noreferrer" aria-label="Portobello"
+          class="flex-none">
+          <img src="assets/icons/carrusel/portobello_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/amici" target="_blank" rel="noopener noreferrer" aria-label="Amici"
+          class="flex-none">
+          <img src="assets/icons/carrusel/amici_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/steakhouse" target="_blank" rel="noopener noreferrer" aria-label="Steakhouse"
+          class="flex-none">
+          <img src="assets/icons/carrusel/steakhouse_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/jimmys" target="_blank" rel="noopener noreferrer" aria-label="Jimmy's"
+          class="flex-none">
+          <img src="assets/icons/carrusel/jimmys_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/monkey" target="_blank" rel="noopener noreferrer" aria-label="Monkey"
+          class="flex-none">
+          <img src="assets/icons/carrusel/monkey_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://www.facebook.com/salonikimalaga/?locale=es_ES" target="_blank" rel="noopener noreferrer" aria-label="Saloniki"
+          class="flex-none">
+          <img src="assets/icons/carrusel/saloniki_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/olive" target="_blank" rel="noopener noreferrer" aria-label="Olive"
+          class="flex-none">
+          <img src="assets/icons/carrusel/olive_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/gaucho" target="_blank" rel="noopener noreferrer" aria-label="Gaucho"
+          class="flex-none">
+          <img src="assets/icons/carrusel/gaucho_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/la-tasca" target="_blank" rel="noopener noreferrer" aria-label="La Tasca"
+          class="flex-none">
+          <img src="assets/icons/carrusel/laTasca_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/dublin" target="_blank" rel="noopener noreferrer" aria-label="Dublin"
+          class="flex-none">
+          <img src="assets/icons/carrusel/dublin_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/granier-arroyo" target="_blank" rel="noopener noreferrer"
+          aria-label="Granier Arroyo" class="flex-none">
+          <img src="assets/icons/carrusel/granierArroyo_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/meat" target="_blank" rel="noopener noreferrer" aria-label="Meat"
+          class="flex-none">
+          <img src="assets/icons/carrusel/meat_logo.png" class="h-14 object-contain inline-block" />
+        </a>
+        <a href="https://REEMPLAZA-URL/cinnamon" target="_blank" rel="noopener noreferrer" aria-label="Cinnamon"
+          class="flex-none">
+          <img src="assets/icons/carrusel/cinnamon_logo.png" class="h-14 object-contain inline-block" />
+        </a>
 
-    <!-- Footer -->
-    <div class="py-10 border-white/10">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center text-sm">
-        <!-- Enlaces -->
-        <div class="space-y-2">
-          <a href="#" data-i18n="restaurante.links.trabaja" class="hover:text-[#947e17] block">TRABAJA CON NOSOTROS</a>
-          <a href="#" data-i18n="restaurante.links.cookies" class="hover:text-[#947e17] block">POLÍTICA DE COOKIES</a>
-          <a href="#" data-i18n="restaurante.links.privacidad" class="hover:text-[#947e17] block">POLÍTICA DE PRIVACIDAD</a>
-          <a href="#" data-i18n="restaurante.links.aviso" class="hover:text-[#947e17] block">AVISO LEGAL</a>
-        </div>
 
-        <!-- Ananta -->
-        <div class="text-center">
-          <p data-i18n="restaurante.ananta.texto" class="text-[#947e17] text-sm">Somos parte del</p>
-          <img src="assets/icons/ananta_logo.png" class="mx-auto h-22 my-4" />
-          <a href="#" data-i18n="restaurante.ananta.boton" class="text-[#947e17] text-sm uppercase underline">¡Conócenos!</a>
-        </div>
-
-        <!-- Instagram -->
-        <div class="text-right">
-          <div class="inline-flex flex-col items-end gap-2">
-            <div class="flex gap-2">
-              <img src="assets/img/rrss_1.jpg" class="w-[88px] h-[120px] object-cover rounded-md shadow" />
-              <img src="assets/img/rrss_2.jpg" class="w-[88px] h-[120px] object-cover rounded-md shadow" />
-            </div>
-            <p class="text-xs tracking-wide w-[180px] text-center text-white font-semibold">@AMIGOS.MALAGACENTRO</p>
-          </div>
-        </div>
+        <img src="assets/icons/carrusel/granierCarihuela_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/theChiringuito_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/elArbol_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/sabor_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/amigos_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/portobello_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/amici_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/steakhouse_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/jimmys_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/monkey_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/saloniki_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/olive_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/gaucho_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/laTasca_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/dublin_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/granierArroyo_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/meat_logo.png" class="h-14 object-contain inline-block" />
+        <img src="assets/icons/carrusel/cinnamon_logo.png" class="h-14 object-contain inline-block" />
       </div>
     </div>
   </div>
